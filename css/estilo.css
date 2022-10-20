@@ -1,0 +1,9 @@
+* {
+    background-color: black;
+}
+h1,h2 {
+    color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
