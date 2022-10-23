@@ -64,4 +64,4 @@ if (edadPermitida) {
         );
     }
 }
-alert("Gracias por comprar en nuestra pagina.");
+alert("Gracias por visitar nuestra pagina.");
