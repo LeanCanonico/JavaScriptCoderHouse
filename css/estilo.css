@@ -1,8 +1,11 @@
 * {
-    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-h1,h2 {
-    color: antiquewhite;
+h1,
+h2 {
+    color: rgb(41, 33, 23);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
