@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
 
 :root {
-    --clr-main: rgb(77, 46, 107);
-    --clr-main-light: rgb(146, 91, 201);
+    --clr-main: rgb(51, 30, 72);
+    --clr-main-light: rgb(83, 255, 89);
     --clr-white: rgb(246, 246, 246);
     --clr-gray: rgb(211, 207, 207);
     --clr-orange: rgb(227, 148, 0);
@@ -103,7 +103,7 @@ aside {
 .number {
     background-color: var(--clr-white);
     color: var(--clr-main);
-    padding: 0.25rem;
+    padding: 0 0.25rem;
     border-radius: 0.25rem;
 }
 

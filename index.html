@@ -21,65 +21,34 @@
                 <nav>
                     <ul class="menu">
                         <li>
-                            <button class="button-menu button-category active">
+                            <button id="all" class="button-menu button-category active">
                                 <i class="bi bi-hand-index-thumb-fill"></i>todos los productos
                             </button>
                         </li>
                         <li>
-                            <button class="button-menu button-category"><i class="bi bi-hand-index-thumb"></i>vinilos</button>
+                            <button id="vinilos" class="button-menu button-category"><i class="bi bi-hand-index-thumb"></i>vinilos</button>
                         </li>
                         <li>
-                            <button class="button-menu button-category"><i class="bi bi-hand-index-thumb"></i>cds</button>
+                            <button id="cds" class="button-menu button-category"><i class="bi bi-hand-index-thumb"></i>cds</button>
                         </li>
                         <li>
-                            <button class="button-menu button-category"><i class="bi bi-hand-index-thumb"></i>merchandising</button>
+                            <button id="merchandising" class="button-menu button-category"><i class="bi bi-hand-index-thumb"></i>merchandising</button>
                         </li>
                         <li>
                             <a class="button-menu button-cart" href="./carrito.html"
-                                ><i class="bi bi-cart-fill"></i>carrito<span class="number">0</span></a
+                                ><i class="bi bi-cart-fill"></i>carrito<span id="number" class="number">0</span></a
                             >
                         </li>
                     </ul>
                 </nav>
                 <footer>
-                    <p class="footer-text">© 2022 CANONICO</p>
+                    <p class="footer-text">© 2022 leandro canonico</p>
                 </footer>
             </aside>
             <main>
-                <h2 class="main-title">todos los productos</h2>
-                <div class="products-container">
-                    <div class="product">
-                        <img class="product-img" src="./assets/img/vinilos/clicsModernos.jpg" alt="" />
-                        <div class="product-details">
-                            <h3 class="product-title">clics modernos</h3>
-                            <p class="product-price">$8700</p>
-                            <button class="add-product">agregar</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img class="product-img" src="./assets/img/vinilos/artaud.jpg" alt="" />
-                        <div class="product-details">
-                            <h3 class="product-title">artaud</h3>
-                            <p class="product-price">$7500</p>
-                            <button class="add-product">agregar</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img class="product-img" src="./assets/img/vinilos/honestidadBrutal.jpg" alt="" />
-                        <div class="product-details">
-                            <h3 class="product-title">honestidad brutal</h3>
-                            <p class="product-price">$5500</p>
-                            <button class="add-product">agregar</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <img class="product-img" src="./assets/img/vinilos/elAmor.jpg" alt="" />
-                        <div class="product-details">
-                            <h3 class="product-title">el amor despues del amor</h3>
-                            <p class="product-price">$6500</p>
-                            <button class="add-product">agregar</button>
-                        </div>
-                    </div>
+                <h2 id="main-title" class="main-title">todos los productos</h2>
+                <div id="products-container" class="products-container">
+                    <!-- ESTA SECCION SE RELLENA CON JS-->
                 </div>
             </main>
         </div>
