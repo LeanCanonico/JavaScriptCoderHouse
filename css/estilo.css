@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
 
 :root {
-    --clr-main: rgb(51, 30, 72);
-    --clr-main-light: rgb(83, 255, 89);
+    --clr-main: rgb(0, 0, 0);
+    --clr-main-light: rgb(159, 59, 206);
     --clr-white: rgb(246, 246, 246);
     --clr-gray: rgb(211, 207, 207);
     --clr-orange: rgb(227, 148, 0);
