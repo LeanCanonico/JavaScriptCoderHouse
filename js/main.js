@@ -185,22 +185,6 @@ const productos = [
     },
 ];
 
-//FUNCTION PARA VALIDAR EDAD
-
-// function ingresoEdad() {
-//     let ingreso = false;
-//     let edadUsuario = parseInt(prompt("Ingresa tu edad"));
-//     if (edadUsuario >= 18) {
-//         alert("¡Bienvenido a Vinyl Mania!");
-//         ingreso = true;
-//     } else {
-//         alert("No tienes la edad suficiente para ingresar");
-//     }
-//     return ingreso;
-// }
-
-// let edadPermitida = ingresoEdad();
-
 // VARIABLES PARA TRABAJAR EL DOM
 
 const contenedorProductos = document.querySelector("#products-container");
@@ -302,3 +286,13 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+
+async function fetchAPI() {
+    const response = await fetch("./data/productos.json");
+    const datos = await response.json();
+
+    console.log(datos);
+    renderServicios(datos);
+}
+
+fetchAPI();
