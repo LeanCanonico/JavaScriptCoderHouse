@@ -1,6 +1,6 @@
-// variable que contendra el array de productos
+// VARIABLE QUE CONTENDRA LOS PRODUCTOS DEL JSON
 let productos;
-// funcion para cargar el array desde json
+// FUNCION PARA CARGAR LOS PRODUCTOS DESDE JSON
 async function fetchAPI() {
     const response = await fetch("../data/productos.json");
     const datos = await response.json();
@@ -17,6 +17,7 @@ const botonesCategorias = document.querySelectorAll(".button-category");
 const tituloPrincipal = document.querySelector("#main-title");
 let botonesAgregar = document.querySelectorAll(".add-product");
 const numerito = document.querySelector("#number");
+const toastify = document.querySelector("#toastify");
 
 // FUNCION PARA CARGAR PRODUCTOS AL HTML
 
@@ -39,14 +40,22 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 }
 
-// LLAMAMOS A LA FUNCION PARA MOSTRAR LOS PRODUCTOS EN EL HTML
-
-// cargarProductos(productos);
-
 // FUNCION PARA USO DE BOTONES
 
 botonesCategorias.forEach((boton) => {
     boton.addEventListener("click", (e) => {
+            Toastify({
+                text: "cambiaste de seccion",
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "black",
+                },
+            }).showToast();
         botonesCategorias.forEach((boton) => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
 
@@ -67,7 +76,7 @@ botonesCategorias.forEach((boton) => {
 
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".add-product");
-
+    
     botonesAgregar.forEach((boton) => {
         boton.addEventListener("click", agregarAlCarrito);
     });
